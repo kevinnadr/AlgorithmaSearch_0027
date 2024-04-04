@@ -11,7 +11,7 @@ void input ()
     {
         cout << "Enter the number of element in the array: ";
         cin >> n;
-        if ((n>0)&& (n<=20))
+        if ((n > 0) && (n <= 20))
             break;
         else
             cout << "\nArray should have minimum 1 and maximum 20 element. \n\n";
@@ -58,7 +58,8 @@ void LinearSearch()
 
         cout << "\nContinue search (y/n): ";
         cin >> ch;
-    }while ((ch == 'y') || (ch == 'y'));
+        
+    } while ((ch == 'y') || (ch == 'Y'));
 }
 
 void display ()
@@ -66,5 +67,12 @@ void display ()
     cout << "Array element are: ";
     for (i = 0; i < n; i++)
         cout << arr[i] << " ";
+    cout << endl;
 }
 
+int main()
+{
+    input();
+    LinearSearch();
+    display();
+}
