@@ -67,3 +67,10 @@ void display ()
     for (i = 0; i < n; 1++)
         cout << arr[i] << " ";
 }
+
+int main()
+{
+    input();
+    LinearSearch();
+    display();
+}
